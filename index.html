@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de compras</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Carrito de Compras</h1>
+    
+    <div class="productos">
+        <div class="producto">
+            <span>Leche =  $1000</span>
+            <input type="number" id="pr1" class="form-control" style="width: 40px;height: 30px;">
+            <button class="btn" onclick="agregarProducto('Leche', 1000,document.getElementById('pr1').value)">Agregar al carro</button>
+        </div>
+        <div class="producto">
+            <span> Pan de Molde =  $2500</span>
+            <input type="number" id="pr2" class="form-control" style="width: 40px;height: 30px;">
+            <button class="btn" onclick="agregarProducto('Pan de molde', 2500,document.getElementById('pr2').value)">Agregar al carro</button>
+        </div>
+        <div class="producto">
+            <span>Queso =  $3500</span>
+            <input type="number" id="pr3" class="form-control" style="width: 40px;height: 30px;">
+          <button class="btn" onclick="agregarProducto('Queso', 3500,document.getElementById('pr3').value)">Agregar al carro</button>
+        </div>
+        <div class="producto">
+            <span>Jamon =  $1890</span>
+            <input type="number" id="pr4" class="form-control"style="width: 40px;height: 30px;" >
+            <button class="btn" onclick="agregarProducto('Jamon', 1890,document.getElementById('pr4').value)">Agregar al carro</button>
+        </div>
+        <div class="producto">
+            <span>Mermelada =  $990</span>
+            <input type="number" id="pr5"  class="form-control" style="width: 40px;height: 30px;">
+            <button class="btn" onclick="agregarProducto('Mermelada', 990,document.getElementById('pr5').value)">Agregar al carro</button>
+        </div>
+        <div class="producto">
+            <span>Azucar = $1290</span>
+            <input type="number" id="pr6" class="form-control" style="width: 40px;height: 30px;" >
+            <button class="btn" onclick="agregarProducto('Azucar', 1290,document.getElementById('pr6').value)">Agregar al carro</button>
+        </div>
+    </div>
+    
+    <div class="carrito">
+        <h2>Carrito</h2>
+        <ul id="lista-carrito"></ul>
+        <p class="total">Total: $<span id="total">0.00</span></p>
+        <button class="btn" id="finalizar-btn" onclick="finalizarCompra()" disabled>Finalizar Compra</button>
+    </div>
+</div>
+</body>
+ <link rel="stylesheet" href="assets/style/style.css">
+  <script src="assets/js/script.js  "></script>
+</html>
