@@ -68,4 +68,10 @@ function agregarProducto(nombre, precio, cantidad) {
 
 function finalizarCompra() {
     carrito.finalizarCompra();
+    document.getElementById("pr1").value=""
+    document.getElementById("pr2").value=""
+    document.getElementById("pr3").value=""
+    document.getElementById("pr4").value=""
+    document.getElementById("pr5").value=""
+    document.getElementById("pr6").value=""
 }
